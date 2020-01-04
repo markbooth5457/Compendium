@@ -10,7 +10,29 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
+        List {
+            NavigationLink(destination: BillSplit()) {
+                Text("BillSplit")
+                
+            }    .frame(height: 100.0)
+                .listRowPlatterColor(Color.yellow)
+            NavigationLink(destination: FizzBuzz()){
+                Text("FizzBuzz")
+            }    .frame(height: 100.0)
+                .listRowPlatterColor(Color.yellow)
+            NavigationLink(destination: Flags()){
+                Text("Flags")
+            }    .frame(height: 100.0)
+                .listRowPlatterColor(Color.yellow)
+            NavigationLink(destination: BillSplit()){
+                Text("another")
+            }    .frame(height: 100.0)
+                .listRowPlatterColor(Color.yellow)
+            
+        }
+            
+        .listStyle(CarouselListStyle())
+        .navigationBarTitle(Text("Compendium"))
     }
 }
 
