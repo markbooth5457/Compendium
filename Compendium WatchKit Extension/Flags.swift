@@ -15,7 +15,16 @@ struct Flags: View {
     "Chad":"🇹🇩","Martinique":"🇲🇶","Mauritania":"🇲🇷",
     "Antarctica":"🇦🇶","Montserrat":"🇲🇸","Togo":"🇹🇬",
     "Malawi":"🇲🇼","Mexico":"🇲🇽","Malaysia":"🇲🇾",
-    "Timor-Leste":"🇹🇱","Hong Kong":"🇭🇰"]
+    "Timor-Leste":"🇹🇱","Hong Kong":"🇭🇰",
+    "Afghanistan":"🇦🇫", "United Nations":"🇺🇳",
+    "Albania":"🇦🇱", "Algeria":"🇩🇿", "Angola":"🇦🇴",
+    "Andorra":"🇦🇩", "Tunisia":"🇹🇳", "Azerbaijan":"🇦🇿",
+    "Turkey":"🇹🇷", "Tonga":"🇹🇴", "Croatia":"🇭🇷",
+    "Hungary":"🇭🇺", "Taiwan":"🇹🇼", "Côte d'Ivoire":"🇨🇮",
+    "Tanzania":"🇹🇿", "Cook Islands":"🇨🇰", "Oman":"🇴🇲",
+    "Chile":"🇨🇱", "Vatican City":"🇻🇦", "Cameroon":"🇨🇲",
+    "China":"🇨🇳", "Colombia":"🇨🇴", "Venezuela":"🇻🇪"]
+    
     // set default first selection of keys - gets reset when alert is dismissed
     @State private var keys = ["Malta", "Argentina", "Austria", "Maldives"]
     @State private var correctAnswer = Int.random(in: 0...3)

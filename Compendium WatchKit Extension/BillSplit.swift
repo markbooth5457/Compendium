@@ -13,6 +13,9 @@ struct BillSplit: View {
     @State private var checkAmount = 0.0
     @State private var numberOfPeople = 2.0
     @State private var tipPercentage = 0.0
+    @State private var checkAmountHasFocus = false
+    @State private var numberOfPeopleHasFocus = false
+    @State private var tipPercentageHasFocus = false
     var grandTotal: Double {
         let tipSelection = Double(tipPercentage)
         let orderAmount = Double(checkAmount)
@@ -31,22 +34,31 @@ struct BillSplit: View {
                 Spacer()
                 Text("£\(checkAmount, specifier: "%.2f")")
             }
-            .focusable(true)
+            .focusable(true, onFocusChange: { param in
+                self.checkAmountHasFocus = param
+                
+            })
+                .border(checkAmountHasFocus ?  Color.green : Color.black, width: 1)
+
             .digitalCrownRotation($checkAmount,
-                                  from: 0,
-                                  through: 2000,
-                                  by: 1.0)
+                                  from: 0.0,
+                                  through: 2000.0,
+                                  by: 0.01, sensitivity: .medium)
             
             HStack(alignment: .center) {
                 Text("Tip")
                 Spacer()
-                Text("%\(tipPercentage, specifier: "%g")")
+                Text("%\(tipPercentage, specifier: "%.1f")")
             }
-            .focusable(true)
+            .focusable(true, onFocusChange: { param in
+                self.tipPercentageHasFocus = param
+                
+            })
+                .border(tipPercentageHasFocus ?  Color.green : Color.black, width: 1)
             .digitalCrownRotation($tipPercentage,
-                                  from: 0.0,
+                                  from: 10.0,
                                   through: 20.0,
-                                  by: 2.5)
+                                  by: 2.5, sensitivity: .medium)
             
             HStack {
                 Text("Total")
@@ -56,12 +68,16 @@ struct BillSplit: View {
             HStack {
                 Text("People # ")
                 Spacer()
-                Text("\(numberOfPeople, specifier: "%g")")
+                Text("\(numberOfPeople, specifier: "%.0f")")
             }
-            .focusable(true)
-            .digitalCrownRotation($numberOfPeople,
-                                  from: 2.0,
-                                  through: 20.0,
+             .focusable(true, onFocusChange: { param in
+                self.numberOfPeopleHasFocus = param
+                
+            })
+                .border(numberOfPeopleHasFocus ?  Color.green : Color.black, width: 1)
+           .digitalCrownRotation($numberOfPeople,
+                                  from: 2,
+                                  through: 20,
                                   by: 1)
             
             HStack {

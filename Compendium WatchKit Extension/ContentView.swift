@@ -30,8 +30,9 @@ struct ContentView: View {
                 .listRowPlatterColor(Color.yellow)
             
         }
-            
+        
         .listStyle(CarouselListStyle())
+    
         .navigationBarTitle(Text("Compendium"))
     }
 }

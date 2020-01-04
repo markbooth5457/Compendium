@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D1C863D23A918D800D8C6F0 /* FizzBuzz.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C863C23A918D800D8C6F0 /* FizzBuzz.swift */; };
+		5D1C863F23A9198200D8C6F0 /* Flags.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D1C863E23A9198200D8C6F0 /* Flags.swift */; };
 		5D3A6C08238AB6F2007736DC /* Compendium WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 5D3A6C07238AB6F2007736DC /* Compendium WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		5D3A6C0E238AB6F2007736DC /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D3A6C0C238AB6F2007736DC /* Interface.storyboard */; };
 		5D3A6C10238AB6F5007736DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D3A6C0F238AB6F5007736DC /* Assets.xcassets */; };
@@ -18,6 +20,7 @@
 		5D3A6C24238AB6F5007736DC /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3A6C23238AB6F5007736DC /* NotificationView.swift */; };
 		5D3A6C26238AB6F6007736DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D3A6C25238AB6F6007736DC /* Assets.xcassets */; };
 		5D3A6C29238AB6F6007736DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D3A6C28238AB6F6007736DC /* Preview Assets.xcassets */; };
+		5D3A6C3C238ACEED007736DC /* BillSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3A6C3B238ACEED007736DC /* BillSplit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +66,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		5D1C863C23A918D800D8C6F0 /* FizzBuzz.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FizzBuzz.swift; sourceTree = "<group>"; };
+		5D1C863E23A9198200D8C6F0 /* Flags.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flags.swift; sourceTree = "<group>"; };
 		5D3A6C03238AB6F2007736DC /* Compendium.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Compendium.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3A6C07238AB6F2007736DC /* Compendium WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Compendium WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D3A6C0D238AB6F2007736DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
@@ -78,6 +83,7 @@
 		5D3A6C28238AB6F6007736DC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5D3A6C2A238AB6F6007736DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D3A6C2B238AB6F6007736DC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		5D3A6C3B238ACEED007736DC /* BillSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSplit.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +130,9 @@
 			isa = PBXGroup;
 			children = (
 				5D3A6C1B238AB6F5007736DC /* ContentView.swift */,
+				5D1C863E23A9198200D8C6F0 /* Flags.swift */,
+				5D3A6C3B238ACEED007736DC /* BillSplit.swift */,
+				5D1C863C23A918D800D8C6F0 /* FizzBuzz.swift */,
 				5D3A6C1D238AB6F5007736DC /* HostingController.swift */,
 				5D3A6C1F238AB6F5007736DC /* ExtensionDelegate.swift */,
 				5D3A6C21238AB6F5007736DC /* NotificationController.swift */,
@@ -274,7 +283,10 @@
 			files = (
 				5D3A6C1E238AB6F5007736DC /* HostingController.swift in Sources */,
 				5D3A6C1C238AB6F5007736DC /* ContentView.swift in Sources */,
+				5D3A6C3C238ACEED007736DC /* BillSplit.swift in Sources */,
+				5D1C863F23A9198200D8C6F0 /* Flags.swift in Sources */,
 				5D3A6C22238AB6F5007736DC /* NotificationController.swift in Sources */,
+				5D1C863D23A918D800D8C6F0 /* FizzBuzz.swift in Sources */,
 				5D3A6C20238AB6F5007736DC /* ExtensionDelegate.swift in Sources */,
 				5D3A6C24238AB6F5007736DC /* NotificationView.swift in Sources */,
 			);
