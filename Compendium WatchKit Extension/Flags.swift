@@ -23,7 +23,13 @@ struct Flags: View {
     "Hungary":"🇭🇺", "Taiwan":"🇹🇼", "Côte d'Ivoire":"🇨🇮",
     "Tanzania":"🇹🇿", "Cook Islands":"🇨🇰", "Oman":"🇴🇲",
     "Chile":"🇨🇱", "Vatican City":"🇻🇦", "Cameroon":"🇨🇲",
-    "China":"🇨🇳", "Colombia":"🇨🇴", "Venezuela":"🇻🇪"]
+    "Luxembourg":"🇱🇺","Guernsey":"🇬🇬","Slovenia":"🇸🇮",
+    "Latvia":"🇱🇻","Ghana":"🇬🇭","Gibraltar":"🇬🇮",
+    "Slovakia":"🇸🇰","Libya":"🇱🇾","Greenland":"🇬🇱",
+
+    "South Africa":"🇿🇦","Senegal":"🇸🇳","Gambia":"🇬🇲",
+    "China":"🇨🇳", "Colombia":"🇨🇴", "Venezuela":"🇻🇪"
+    ]
     
     // set default first selection of keys - gets reset when alert is dismissed
     @State private var keys = ["Malta", "Argentina", "Austria", "Maldives"]
@@ -69,7 +75,8 @@ struct Flags: View {
                 Spacer()
             }
         }
-            
+        .foregroundColor(.white)
+        .font(.body)
         .alert(isPresented: $showingScore){
             Alert(title: Text(scoreTitle ), message:
                 Text("\( self.flagDict [self.keys[self.numberTapped]] ?? "That " )is the flag of \n \(self.keys[self.numberTapped] )\n \(correct) out of \(played)"),
@@ -102,3 +109,9 @@ struct Flags: View {
 
 
 
+
+struct Flags_Previews: PreviewProvider {
+    static var previews: some View {
+        Flags()
+    }
+}

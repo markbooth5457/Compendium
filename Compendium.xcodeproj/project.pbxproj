@@ -21,6 +21,13 @@
 		5D3A6C26238AB6F6007736DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D3A6C25238AB6F6007736DC /* Assets.xcassets */; };
 		5D3A6C29238AB6F6007736DC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D3A6C28238AB6F6007736DC /* Preview Assets.xcassets */; };
 		5D3A6C3C238ACEED007736DC /* BillSplit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D3A6C3B238ACEED007736DC /* BillSplit.swift */; };
+		5D77F8B523C1F82600EED266 /* SimonSays.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D77F8B423C1F82600EED266 /* SimonSays.swift */; };
+		5D901FCE243B8CD30097D08F /* Basso.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5D901FCD243B8CD30097D08F /* Basso.aiff */; };
+		5D901FD3243B8CFE0097D08F /* Glass.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5D901FCF243B8CFE0097D08F /* Glass.aiff */; };
+		5D901FD4243B8CFE0097D08F /* Submarine.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5D901FD0243B8CFE0097D08F /* Submarine.aiff */; };
+		5D901FD5243B8CFE0097D08F /* Ping.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5D901FD1243B8CFE0097D08F /* Ping.aiff */; };
+		5D901FD6243B8CFE0097D08F /* Tink.aiff in Resources */ = {isa = PBXBuildFile; fileRef = 5D901FD2243B8CFE0097D08F /* Tink.aiff */; };
+		5D901FD8243B8D2C0097D08F /* PlaySound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D901FD7243B8D2C0097D08F /* PlaySound.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +91,13 @@
 		5D3A6C2A238AB6F6007736DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D3A6C2B238AB6F6007736DC /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		5D3A6C3B238ACEED007736DC /* BillSplit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillSplit.swift; sourceTree = "<group>"; };
+		5D77F8B423C1F82600EED266 /* SimonSays.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimonSays.swift; sourceTree = "<group>"; };
+		5D901FCD243B8CD30097D08F /* Basso.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Basso.aiff; sourceTree = "<group>"; };
+		5D901FCF243B8CFE0097D08F /* Glass.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Glass.aiff; sourceTree = "<group>"; };
+		5D901FD0243B8CFE0097D08F /* Submarine.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Submarine.aiff; sourceTree = "<group>"; };
+		5D901FD1243B8CFE0097D08F /* Ping.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Ping.aiff; sourceTree = "<group>"; };
+		5D901FD2243B8CFE0097D08F /* Tink.aiff */ = {isa = PBXFileReference; lastKnownFileType = audio.aiff; path = Tink.aiff; sourceTree = "<group>"; };
+		5D901FD7243B8D2C0097D08F /* PlaySound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaySound.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +111,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5D0E5111243F87FA001486B4 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				5D901FCD243B8CD30097D08F /* Basso.aiff */,
+				5D901FCF243B8CFE0097D08F /* Glass.aiff */,
+				5D901FD0243B8CFE0097D08F /* Submarine.aiff */,
+				5D901FD2243B8CFE0097D08F /* Tink.aiff */,
+				5D901FD1243B8CFE0097D08F /* Ping.aiff */,
+			);
+			name = Sounds;
+			sourceTree = "<group>";
+		};
 		5D3A6BFC238AB6F2007736DC = {
 			isa = PBXGroup;
 			children = (
@@ -129,12 +155,15 @@
 		5D3A6C1A238AB6F5007736DC /* Compendium WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				5D0E5111243F87FA001486B4 /* Sounds */,
 				5D3A6C1B238AB6F5007736DC /* ContentView.swift */,
 				5D1C863E23A9198200D8C6F0 /* Flags.swift */,
+				5D77F8B423C1F82600EED266 /* SimonSays.swift */,
 				5D3A6C3B238ACEED007736DC /* BillSplit.swift */,
 				5D1C863C23A918D800D8C6F0 /* FizzBuzz.swift */,
 				5D3A6C1D238AB6F5007736DC /* HostingController.swift */,
 				5D3A6C1F238AB6F5007736DC /* ExtensionDelegate.swift */,
+				5D901FD7243B8D2C0097D08F /* PlaySound.swift */,
 				5D3A6C21238AB6F5007736DC /* NotificationController.swift */,
 				5D3A6C23238AB6F5007736DC /* NotificationView.swift */,
 				5D3A6C25238AB6F6007736DC /* Assets.xcassets */,
@@ -269,6 +298,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D901FD4243B8CFE0097D08F /* Submarine.aiff in Resources */,
+				5D901FD3243B8CFE0097D08F /* Glass.aiff in Resources */,
+				5D901FCE243B8CD30097D08F /* Basso.aiff in Resources */,
+				5D901FD5243B8CFE0097D08F /* Ping.aiff in Resources */,
+				5D901FD6243B8CFE0097D08F /* Tink.aiff in Resources */,
 				5D3A6C29238AB6F6007736DC /* Preview Assets.xcassets in Resources */,
 				5D3A6C26238AB6F6007736DC /* Assets.xcassets in Resources */,
 			);
@@ -283,8 +317,10 @@
 			files = (
 				5D3A6C1E238AB6F5007736DC /* HostingController.swift in Sources */,
 				5D3A6C1C238AB6F5007736DC /* ContentView.swift in Sources */,
+				5D77F8B523C1F82600EED266 /* SimonSays.swift in Sources */,
 				5D3A6C3C238ACEED007736DC /* BillSplit.swift in Sources */,
 				5D1C863F23A9198200D8C6F0 /* Flags.swift in Sources */,
+				5D901FD8243B8D2C0097D08F /* PlaySound.swift in Sources */,
 				5D3A6C22238AB6F5007736DC /* NotificationController.swift in Sources */,
 				5D1C863D23A918D800D8C6F0 /* FizzBuzz.swift in Sources */,
 				5D3A6C20238AB6F5007736DC /* ExtensionDelegate.swift in Sources */,

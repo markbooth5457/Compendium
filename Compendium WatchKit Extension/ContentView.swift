@@ -24,12 +24,13 @@ struct ContentView: View {
                 Text("Flags")
             }    .frame(height: 100.0)
                 .listRowPlatterColor(Color.yellow)
-            NavigationLink(destination: BillSplit()){
-                Text("another")
+            NavigationLink(destination: SimonSays()){
+                Text("Simon")
             }    .frame(height: 100.0)
                 .listRowPlatterColor(Color.yellow)
-            
-        }
+ 
+        }.foregroundColor(.black)
+            .font(.system(size: 30))
         
         .listStyle(CarouselListStyle())
     

@@ -93,6 +93,13 @@ struct FizzBuzz: View {
                 .background(Color.orange)
                 .clipShape(Capsule())
             }
-        }
+        }.font(.body)
+            .foregroundColor(.white)
+    }
+}
+
+struct FizzBuzz_Previews: PreviewProvider {
+    static var previews: some View {
+        FizzBuzz()
     }
 }
