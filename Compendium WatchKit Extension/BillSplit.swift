@@ -13,7 +13,7 @@ struct BillSplit: View {
     @State private var checkAmount = 0.0
     @State private var numberOfPeople = 2.0
     @State private var tipPercentage = [0.0, 10.0, 12.5, 15.0, 20]
-    @State private var tipIndex = 1.0
+    @State private var tipIndex = defaults.double(forKey: "tipIndex")
     @State private var checkAmountHasFocus = false
     @State private var numberOfPeopleHasFocus = false
     @State private var tipPercentageHasFocus = false
@@ -29,7 +29,7 @@ struct BillSplit: View {
         return amountPerPerson
     }
     var body: some View {
-        VStack(alignment: .center, spacing: 13.0){
+        VStack(alignment: .center, spacing: 10.0){
             HStack {
                 Text("Bill")
                 Spacer()
@@ -53,7 +53,7 @@ struct BillSplit: View {
             }
             .focusable(true, onFocusChange: { param in
                 self.tipPercentageHasFocus = param
-                
+                defaults.set(self.tipIndex, forKey: "tipIndex")
             })
                 .border(tipPercentageHasFocus ?  Color.green : Color.black, width: 1)
                 .digitalCrownRotation($tipIndex,
